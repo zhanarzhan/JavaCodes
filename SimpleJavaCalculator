@@ -1,0 +1,47 @@
+
+
+package simplecalculator;
+
+import java.util.Scanner;
+
+public class SimpleCalculator {
+
+    public static void main(String[] args) {
+        
+        Scanner jan = new Scanner(System.in);
+        
+        int a,b;
+        
+        System.out.println("Enter number: ");
+        a = jan.nextInt();
+        b = jan.nextInt();
+        
+        System.out.println("1 - Addition");
+        System.out.println("2 - Substraction");
+        System.out.println("3 - Multiplication");
+        System.out.println("4 - Division");
+        
+        int choice;
+        choice = jan.nextInt();
+        
+        while(choice !=0){
+            
+            if(choice == 1){
+                System.out.println("Sum = " + (a+b));
+                return;
+            }
+            else if (choice == 2){
+                System.out.println("Substraction = " + (a-b));
+               return;
+            }
+            else if (choice == 3){
+                System.out.println("Multiplication = " + (a*b));
+               return;
+            }
+            else if (choice == 4){
+                System.out.println("Division = " + ((double)a/b));
+               return;
+            }
+            } 
+         } 
+    }
